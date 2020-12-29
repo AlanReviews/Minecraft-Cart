@@ -11,6 +11,8 @@ def main():
     DISPLAY.fill(WHITE)
 
     pygame.draw.rect(DISPLAY,(211,211,211),(100,300,400,200))
+    pygame.draw.circle(DISPLAY,(0,0,0),(200,500),50)
+    pygame.draw.circle(DISPLAY,(0,0,0),(400,500),50)
 
     while True:
         for event in pygame.event.get():
