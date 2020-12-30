@@ -3,7 +3,7 @@ from pygame.locals import *
 
 def main():
     pygame.init()
-
+    
     DISPLAY = pygame.display.set_mode((600,600),0,32)
 
     BG_COLOR=(169,169,169)
@@ -23,6 +23,7 @@ def main():
     while True:
         for event in pygame.event.get():
             if event.type==QUIT:
+                pygame.image.save(DISPLAY, "MinecraftCart.jpg")
                 pygame.quit()
                 sys.exit()
         pygame.display.update()
